@@ -1,0 +1,8 @@
+.footer__container {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.footer__container p + p {
+  margin-top: -2rem;
+}

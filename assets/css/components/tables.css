@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+table caption {
+  font-style: italic;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+table td,
+table th {
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid var(--light-grey);
+}

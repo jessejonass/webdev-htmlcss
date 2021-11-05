@@ -1,0 +1,27 @@
+.contact__form {
+  grid-column: span 2;
+  user-select: none;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group + div {
+  margin-top: 2rem;
+}
+
+.form__group label {
+  font-size: 1.6rem;
+}
+
+.form__group button {
+  width: 100%;
+  transition: ease-in-out 0.1s;
+  background: var(--secondary);
+}
+
+.form__group button:hover {
+  background: var(--primary);
+}

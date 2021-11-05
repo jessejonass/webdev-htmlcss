@@ -1,0 +1,35 @@
+.aside__container {
+  position: fixed;
+  z-index: 3;
+  background: var(--white);
+  border-right: 0.2rem solid var(--secondary);
+  width: 70%;
+  padding: 6rem 4rem;
+}
+
+.aside__container--visible {
+  display: block;
+}
+
+.aside__container--hidden {
+  display: none;
+}
+
+.aside__container h1 {
+  font-size: 2.3rem;
+  padding: 2rem;
+}
+
+.aside__container h1 a {
+  color: var(--primary);
+  transition: ease-in-out 0.2s;
+}
+
+.aside__container h1 a:hover {
+  color: var(--secondary);
+}
+
+.aside__menu ul {
+  flex-direction: column;
+  align-items: flex-start;
+}

@@ -1,0 +1,18 @@
+.intro__content {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--gap);
+  align-items: stretch;
+}
+
+.intro__info, .intro__image {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.intro__image img {
+  max-width: 100%;
+  height: auto;
+}
