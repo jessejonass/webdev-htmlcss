@@ -1,0 +1,14 @@
+.back-to-top {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: 50%;
+  background: var(--white);
+  border: 0.1rem solid var(--primary);
+  transform: rotate(-90deg);
+}
