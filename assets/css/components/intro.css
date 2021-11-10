@@ -6,7 +6,8 @@
   align-items: stretch;
 }
 
-.intro__info, .intro__image {
+.intro__info,
+.intro__image {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -15,4 +16,18 @@
 .intro__image img {
   max-width: 100%;
   height: auto;
+}
+
+@media (max-width: 600px) {
+  .intro__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .intro__image img {
+    max-width: 60%;
+    height: auto;
+    margin: 0 auto;
+  }
 }

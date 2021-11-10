@@ -25,17 +25,17 @@
     <link rel="stylesheet" href="assets/css/components/footer.css" />
     <link rel="stylesheet" href="assets/css/components/aside.css" />
     <link rel="stylesheet" href="assets/css/components/back-to-top.css" />
-    <title>WEBDEV | Como inicar</title>
+    <title>WEBDEV | Como iniciar</title>
   </head>
 
   <body class="main__background">
     <header class="header__container white__background">
       <div class="header__content main__container">
-        <h1><a href="#intro">&lt;/WebDev</a></h1>
+        <h1><a href="#">&lt;/WebDev</a></h1>
 
         <nav class="header__menu header__menu-big">
           <ul>
-            <li><a href="#intro">home</a></li>
+            <li><a href="#">home</a></li>
             <li><a href="#which-is">o que é</a></li>
             <li><a href="#main-languages">principais linguagens</a></li>
             <li><a href="#what-it-does">o que faz?</a></li>
@@ -67,7 +67,7 @@
     <aside class="aside__container aside__container--hidden main__page">
       <nav class="header__menu aside__menu">
         <ul>
-          <li><a href="#intro">home</a></li>
+          <li><a href="#">home</a></li>
           <li><a href="#which-is">o que é</a></li>
           <li><a href="#main-languages">principais linguagens</a></li>
           <li><a href="#what-it-does">o que faz?</a></li>
@@ -382,28 +382,57 @@
     </section>
 
     <section id="contact" class="white__background">
-      <form class="contact__form main__container divider">
+      <form
+        class="contact__form main__container divider"
+        action="https://formsubmit.co/jessejonas13@gmail.com"
+        method="POST"
+      >
         <h2>Entre em contato 📝📧</h2>
         <p>Para dicas, sugestões no post, etc...</p>
 
         <div class="form__group">
+          <input type="hidden" name="_subject" value="New e-mail woooo" />
+        </div>
+
+        <div class="form__group">
+          <label for="name">Nome</label>
+          <input
+            placeholder="Nome"
+            type="text"
+            name="name"
+            id="name"
+            required
+          />
+        </div>
+
+        <div class="form__group">
           <label for="email">E-mail</label>
           <input
-            placeholder="Insira aqui seu email"
+            placeholder="E-mail"
             type="email"
             name="email"
             id="email"
+            required
+          />
+        </div>
+
+        <div class="form__group">
+          <input
+            type="hidden"
+            name="_next"
+            value="https://webdevjj.netlify.app/thx.html"
           />
         </div>
 
         <div class="form__group">
           <label for="message">Mensagem</label>
           <textarea
-            placeholder="Insira aqui sua mensagem"
+            placeholder="Mensagem"
             name="message"
             id="message"
             cols="30"
             rows="5"
+            required
           ></textarea>
         </div>
 
@@ -433,7 +462,6 @@
         >
       </p>
     </footer>
-
     <a href="#" class="back-to-top">›</a>
   </body>
   <script src="assets/js/aside.js"></script>
